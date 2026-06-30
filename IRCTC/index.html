@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RailOne</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f8f9fc;
+padding-bottom:90px;
+}
+
+.container{
+padding:20px;
+}
+
+.header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:25px;
+}
+
+.logo{
+font-size:38px;
+font-weight:700;
+}
+
+.logo span{
+color:#ff5722;
+}
+
+.icon-circle{
+width:45px;
+height:45px;
+background:#fff;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+box-shadow:0 2px 10px rgba(0,0,0,.08);
+}
+
+.greeting{
+font-size:22px;
+font-weight:500;
+margin-bottom:15px;
+color:#1d2b5f;
+}
+
+.section-title{
+font-size:32px;
+font-weight:700;
+color:#0c2b73;
+margin-bottom:18px;
+}
+
+.cards-row{
+display:flex;
+gap:15px;
+overflow-x:auto;
+margin-bottom:30px;
+}
+
+.planner-card{
+min-width:160px;
+background:#fff;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 4px 15px rgba(0,0,0,.08);
+}
+
+.planner-card img{
+width:100%;
+height:120px;
+object-fit:cover;
+}
+
+.planner-card h3{
+text-align:center;
+padding:12px;
+font-size:18px;
+font-weight:500;
+}
+
+.offer-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:18px;
+margin-bottom:35px;
+}
+
+.offer-item{
+text-align:center;
+}
+
+.offer-icon{
+width:75px;
+height:75px;
+margin:auto;
+border-radius:18px;
+background:#ececff;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:28px;
+margin-bottom:10px;
+}
+
+.offer-item p{
+font-size:15px;
+font-weight:500;
+color:#23315f;
+}
+
+.ticket-card{
+background:linear-gradient(135deg,#5347d8,#d48bf5);
+padding:25px;
+border-radius:25px;
+color:white;
+margin-bottom:40px;
+box-shadow:0 8px 25px rgba(103,74,219,.25);
+}
+
+.route{
+display:flex;
+justify-content:space-between;
+margin:18px 0;
+font-size:22px;
+font-weight:600;
+}
+
+.status{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-top:20px;
+}
+
+.unreserved{
+color:#d4ffaf;
+font-size:22px;
+font-weight:700;
+}
+
+.btn{
+padding:10px 20px;
+border:2px solid #fff;
+border-radius:30px;
+background:transparent;
+color:white;
+cursor:pointer;
+}
+
+.facts{
+display:flex;
+gap:15px;
+overflow-x:auto;
+}
+
+.fact-card{
+min-width:280px;
+background:white;
+border-radius:18px;
+overflow:hidden;
+box-shadow:0 3px 12px rgba(0,0,0,.08);
+}
+
+.fact-card img{
+width:100%;
+height:180px;
+object-fit:cover;
+}
+
+.fact-card p{
+padding:15px;
+font-size:15px;
+line-height:1.6;
+}
+
+.bottom-nav{
+position:fixed;
+bottom:0;
+left:0;
+width:100%;
+background:#0057ff;
+display:flex;
+justify-content:space-around;
+padding:12px 0;
+color:white;
+}
+
+.nav-item{
+text-align:center;
+font-size:14px;
+}
+
+.nav-item i{
+font-size:22px;
+display:block;
+margin-bottom:4px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+<div class="icon-circle">🌐</div>
+<div class="logo">Rail<span>One</span></div>
+<div class="icon-circle">🔔</div>
+</div>
+
+<div class="greeting">
+Hi, Rahul Jagtap!
+</div>
+
+<h2 class="section-title">Journey Planner</h2>
+
+<div class="cards-row">
+
+<div class="planner-card">
+
+    <a href="RailOne.html">
+<img src="https://images.unsplash.com/photo-1474487548417-781cb71495f3">
+<h3>Reserved</h3>
+</a>
+</div>
+
+<div class="planner-card">
+<img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f">
+<h3>Unreserved</h3>
+</div>
+
+<div class="planner-card">
+<img src="https://images.unsplash.com/photo-1474487548417-781cb71495f3">
+<h3>Platform</h3>
+</div>
+
+</div>
+
+<h2 class="section-title">More Offerings</h2>
+
+<div class="offer-grid">
+
+<div class="offer-item">
+<div class="offer-icon">🔍</div>
+<p>Search Trains</p>
+</div>
+
+<div class="offer-item">
+<div class="offer-icon">🎫</div>
+<p>PNR Status</p>
+</div>
+
+<div class="offer-item">
+<div class="offer-icon">🚆</div>
+<p>Coach Position</p>
+</div>
+
+<div class="offer-item">
+<div class="offer-icon">📍</div>
+<p>Track Train</p>
+</div>
+
+<div class="offer-item">
+<div class="offer-icon">🍔</div>
+<p>Order Food</p>
+</div>
+
+<div class="offer-item">
+<div class="offer-icon">💳</div>
+<p>Refund</p>
+</div>
+
+<div class="offer-item">
+<div class="offer-icon">🤝</div>
+<p>Rail Madad</p>
+</div>
+
+<div class="offer-item">
+<div class="offer-icon">🌊</div>
+<p>WAVES</p>
+</div>
+
+</div>
+
+<h2 class="section-title">Upcoming Journey</h2>
+
+<div class="ticket-card">
+
+<div>Sat, 31 Jan 2026</div>
+
+<div class="route">
+<span>DAUND JN.</span>
+<span>AKURDI</span>
+</div>
+
+<div class="status">
+<span class="unreserved">Unreserved</span>
+
+<div>
+<button class="btn">Book Again</button>
+
+<a href="seocndpage.html"><button class="btn">View Details</button>
+</a>
+
+
+</div>
+
+</div>
+
+</div>
+
+<h2 class="section-title">Do You Know?</h2>
+
+<div class="facts">
+
+<div class="fact-card">
+<img src="https://images.unsplash.com/photo-1516900557549-41557d405adf">
+<p>First passenger train in India ran between Bori Bunder and Thane on April 16, 1853.</p>
+</div>
+
+<div class="fact-card">
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+<p>Chenab Railway Bridge is the world's highest railway bridge.</p>
+</div>
+
+</div>
+
+</div>
+
+<div class="bottom-nav">
+
+<div class="nav-item">
+🏠
+<div>Home</div>
+</div>
+
+<div class="nav-item">
+🎟️
+<div>Bookings</div>
+</div>
+
+<div class="nav-item">
+👤
+<div>You</div>
+</div>
+
+<div class="nav-item">
+☰
+<div>Menu</div>
+</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Template</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .mobile-screen {
+            width: 360px;
+            background: #ffffff;
+            border-radius: 25px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+        }
+        
+        .top-bar {
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+            color: white;
+            padding: 36px;
+            text-align: left;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        
+        .top-bar div1 {
+            font-weight: lighter;
+            font-family: noto sans;
+        }
+        
+        .countdown-box {
+            background: #111827;
+            color: white;
+            margin: 20px;
+            padding: 23px;
+            border-radius: 11px;
+            text-align: center;
+        }
+        
+        .countdown-box h1 {
+            font-size: 40px;
+            color: #ff3b3b;
+            margin: 5px 0;
+        }
+        
+        .countdown-box div2 {
+            font-size: 30px;
+            color: #ffb43b;
+        }
+        
+        .countdown-box div6 {
+            font-size: 15px;
+        }
+        
+        .ticket-card {
+            background: #ffffff;
+            margin: 18px;
+            padding: 15px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+        }
+        
+        .ticket-card p {
+            margin: 4px 0px;
+        }
+        
+        .row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 50px;
+            /*inncrease space*/
+        }
+        
+        .note {
+            background: #ffe5e5;
+            color: #b91c1c;
+            padding: 10px;
+            margin: 15px;
+            border-radius: 10px;
+            font-size: 12px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class=".mobile-screen">
+
+        <div class="top-bar">
+            Booking Details<br>
+            <div1><span>Mobile 83903424444</span></div1>
+        </div>
+
+        <div class="countdown-box">
+            <di1>Dynamic preview will close in</div1>
+                <h1 id="timer">03:57</h1>
+                <div6> Ticket Booking Date & Time</div6><br>
+                <div2>27 june 2026, 00:04</div2>
+                <div> R16237</div>
+                <div4> Ticket is non-Transferable</div4>
+        </div>
+
+        <div class="ticket-card">
+            <p><strong>Season Ticket &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XYDIEA2000</strong></p>
+
+
+
+
+            <div class="row">
+                <span>Daund JN</span>
+
+                <Span>  -96 km- </Span>
+                <span>Akurdi</span>
+            </div>
+            <p>Via: Pune</p>
+
+            <div class="row">
+                <span>Valid From: 27/06/2026</span>
+                <span>Valid Till: 25/07/2026</span>
+            </div>
+
+            <p>Monthly | Second | ₹355.00</p>
+
+            <hr>
+
+            <div class="row">
+                <span>Name <br> Ganesh kshirsagar</span>
+                <span>Age<br> 27</span>
+            </div>
+            <p>ID Type: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ID Number<br> Aadhaar Card &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                519621429900
+            </p>
+        </div>
+
+        <div class="note">
+            Note: This ticket is non refundable. Do not factory reset your device.
+
+            <!--View Details Link-->
+            <a href="RailOne1.html">
+                <button class="btn">/</button>
+            </a>
+        </div>
+
+    </div>
+
+    <script>
+        // Simple Countdown Timer
+        let Days = 30;
+        let seconds = 57;
+
+        const timer = document.getElementById("timer");
+
+        setInterval(function() {
+            if (seconds == 0) {
+                if (Days == 0) return;
+                DAus--;
+                seconds = 59;
+            } else {
+                seconds--;
+            }
+
+            timer.textContent =
+                String(Days).padStart(2, '0') + ":" +
+                String(seconds).padStart(2, '0');
+        }, 1000);
+    </script>
+    <!--project
+      |
+      |---index.html
+      |---details.html   <--- Your page
+      |---image1.jpg
+      |----image2.jpg>
+</body>
+
+</html>

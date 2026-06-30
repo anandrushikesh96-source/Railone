@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- vERY imp (mOBILE SIZE fiX)-->
+
+    <Meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <title>Railone1stPage</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+        /* Mobile Screen container*/
+        
+        .mobile {
+            max-width: 400px;
+            height: 100vh;
+            margin: auto;
+            background: white;
+            overflow: hidden;
+        }
+        
+        .page {
+            display: none;
+            text-align: ceneter;
+        }
+        
+        .active {
+            display: block;
+        }
+        /* Images */
+        
+        img {
+            width: 100%;
+            height: auto;
+        }
+        /* BUtton style*/
+        
+        .btn {
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: #4a6cf7;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--Page1-->
+
+    <div class="mobile">
+
+
+        <!--Pgae 1-->
+
+        <div id="page1" class="page active">
+            <img src="img1.jpeg"><a href=""></a>
+            <button class="btn" onclick="next1()"> Next </button>
+
+        </div>
+
+
+
+        <!-- Page2 -->
+        <div id="page2" class="Page">
+
+            <img src="img2.jpeg">
+            <button class="btn" onclick="next2()">Next</button>
+
+        </div>
+
+        <!-- View Details Link
+        <a href="RailOne.html">
+            <button class="btn">View Details</button>
+        </a> -->
+    </div>
+
+    <script>
+        function next1() {
+
+            document.getElementByid("page1").classList.remove("active");
+
+            document.getElementByid("page2").classList.add("active");
+        }
+
+        function next2() {
+            window.location.href = "RailOne.html";
+        }
+    </script>
+
+</body>
+
+</html>
